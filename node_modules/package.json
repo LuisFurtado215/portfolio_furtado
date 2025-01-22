@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Compile sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass assets/sass/:assets/css/ -w --style=compressed --source-map"
+  },
+  "keywords": [
+    "Html",
+    "Theme"
+  ],
+  "author": "Luis Furtado",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.1",
+    "w3c-html-validator": "^1.8.2"
+  }
+}

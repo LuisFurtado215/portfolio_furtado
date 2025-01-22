@@ -1,0 +1,159 @@
+@import "../utils/typography";
+
+header {
+    position: fixed;
+
+    top: 3rem;
+    padding: 3rem 0;
+    width: 80%;
+    background-color: #2b2b2b;
+    z-index: 1000;
+    transition: all 0.3s ease;
+
+    font-family: $font-primary;
+
+    &.scrolled {
+        top: 0;
+        box-shadow:  0px 0px 20px 2px #00000066;
+        
+        border-radius: 0 0 .8rem .8rem;
+
+        transition: all 0.3s ease;
+
+
+    }
+
+    & div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        & nav {
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+
+            @media (max-width: 1550px) {
+                gap: 4rem;
+            }
+
+            @media (max-width: 1450px) {
+                gap: 3rem;
+            }
+
+            @media (max-width: 900px) {
+                gap: 2rem;
+            }
+
+            & a {
+                color: white;
+                text-decoration: none;
+
+                font-family: $font-primary;
+                font-size: 1.5rem;
+
+                @media (max-width: 1350px) {
+                    font-size: 1.3rem;
+                }
+
+                @media (max-width: 1200px) {
+                    font-size: 1rem;
+                }
+
+                @media (max-width: 1000px) {
+                    font-size: .8rem;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 1.3rem;
+                }
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+                flex-direction: column;
+                gap: 1.5rem;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 95%;
+                background-color: #1e1e1e;
+                padding: 1rem;
+            }
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        label.burger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 0.3rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            span {
+                position: relative;
+                width: 3rem;
+                height: 0.3rem;
+                background-color: white;
+                border-radius: 2rem;
+
+                transition: all 0.2s ease-in-out;
+
+                &::before {
+                    content: "";
+                    display: block;
+
+                    position: absolute;
+                    top: -1rem;
+
+                    width: 3rem;
+                    height: 0.3rem;
+                    background-color: white;
+                    border-radius: 2rem;
+
+                    transition: all 0.2s ease-in-out;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+
+                    position: absolute;
+                    top: 1rem;
+
+                    width: 3rem;
+                    height: 0.3rem;
+                    background-color: white;
+                    border-radius: 2rem;
+
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+
+            @media (max-width: 768px) {
+                display: flex;
+            }
+        }
+
+        #menu-toggle:checked~nav {
+            display: flex;
+        }
+
+        #menu-toggle:checked~label.burger-menu span {
+            background-color: #00000000;
+            transform: rotate(45deg) translate(0rem, -1rem);
+
+            &::before {
+                top: 1rem;
+            }
+
+            &::after {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
