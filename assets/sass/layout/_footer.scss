@@ -32,7 +32,7 @@ footer {
             cursor: pointer;
             transition: all 0.3s ease;
 
-            background-image: url(imagens/icons8-linkedin-100\ \(3\).png);
+            background-image: url(../../imagens/icons8-linkedin-100\ \(3\).png);
 
             background-size: 100%;
 
@@ -42,7 +42,7 @@ footer {
             }
 
             &:nth-of-type(2) {
-                background-image: url(imagens/icons8-whatsapp-100-copy.png);
+                background-image: url(../../imagens/icons8-whatsapp-100-copy.png);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 90%;
@@ -51,7 +51,7 @@ footer {
             }
 
             &:nth-of-type(3) {
-                background-image: url(imagens/mail-svgrepo-com.png);
+                background-image: url(../../imagens/mail-svgrepo-com.png);
                 margin-right: 0;
 
                 background-position: center;
@@ -62,16 +62,16 @@ footer {
             &:hover {
                 content: '';
                 transform: scale(1.1);
-                background-image: url(imagens/icons8-linkedin-100\ \(2\).png);
+                background-image: url(../../imagens/icons8-linkedin-100\ \(2\).png);
 
                 &:nth-of-type(2) {
-                    background-image: url(imagens/icons8-whatsapp-100.png);
+                    background-image: url(../../imagens/icons8-whatsapp-100.png);
                     background-size: 100%;
 
                 }
 
                 &:nth-of-type(3) {
-                    background-image: url(imagens/mail-open-svgrepo-com.png);
+                    background-image: url(../../imagens/mail-open-svgrepo-com.png);
                 }
             }
         }

@@ -220,7 +220,7 @@ main {
                 cursor: pointer;
                 transition: all 0.3s ease;
 
-                background-image: url(imagens/icons8-linkedin-100\ \(3\).png);
+                background-image: url(../../../imagens/icons8-linkedin-100\ \(3\).png);
 
                 background-size: 100%;
 
@@ -238,17 +238,17 @@ main {
                 }
 
                 &:last-of-type {
-                    background-image: url(imagens/mail-svgrepo-com.png);
+                    background-image: url(../../../imagens/mail-svgrepo-com.png);
                     margin-right: 0;
                 }
 
                 &:hover {
                     content: '';
                     transform: scale(1.1);
-                    background-image: url(imagens/icons8-linkedin-100\ \(2\).png);
+                    background-image: url(../../../imagens/icons8-linkedin-100\ \(2\).png);
 
                     &:last-of-type {
-                        background-image: url(imagens/mail-open-svgrepo-com.png);
+                        background-image: url(../../../imagens/mail-open-svgrepo-com.png);
                     }
 
                 }
