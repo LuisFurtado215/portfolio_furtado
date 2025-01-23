@@ -1,11 +1,57 @@
 @import "./variables";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0% 10% 0 10%;
 
     box-sizing: border-box;
     position: relative;
-    scroll-behavior: smooth;
     background-color: #1f1f1f;
     justify-items: center;
 }
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #2b2b2b;
+  }
+  
+  ::-webkit-scrollbar-button:single-button:increment {
+    width: 1rem;
+    height: 1rem;
+    
+    background-size: 100%;
+    background-image: url(../../../imagens/arrow-down-square-svgrepo-com.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 1px solid #2b2b2b;
+
+
+  }
+
+  ::-webkit-scrollbar-button:single-button:decrement {
+    width: 1rem;
+    height: 1rem;
+    
+    background-size: 100%;
+    background-image: url(../../../imagens/arrow-up-square-svgrepo-com.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 1px solid #2b2b2b;
+
+
+  }
+  
